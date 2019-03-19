@@ -8,6 +8,9 @@ import { ModuleListComponentComponent } from './module-list-component/module-lis
 import { LessonTabComponentComponent } from './lesson-tab-component/lesson-tab-component.component';
 import { TopicPillComponentComponent } from './topic-pill-component/topic-pill-component.component';
 import { WidgetListComponentComponent } from './widget-list-component/widget-list-component.component';
+import {RouterModule, Routes} from "@angular/router";
+import { routing } from './app.routing';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { WidgetListComponentComponent } from './widget-list-component/widget-lis
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
