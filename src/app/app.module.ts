@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CourseGridComponentComponent } from './course-grid-component/course-grid-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CourseGridComponentComponent
   ],
   imports: [
     BrowserModule,
