@@ -19,14 +19,13 @@ import { routing } from './app.routing';
     ModuleListComponentComponent,
     LessonTabComponentComponent,
     TopicPillComponentComponent,
-    WidgetListComponentComponent
+    WidgetListComponentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     routing
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

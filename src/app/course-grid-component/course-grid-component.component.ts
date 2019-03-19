@@ -10,6 +10,10 @@ export class CourseGridComponentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // this.service
+    //   .findAllCourses()
+    //   .then(courses => console.log(courses))
   }
+
 
 }
