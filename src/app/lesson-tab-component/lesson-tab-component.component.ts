@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lesson-tab-component',
-  template: `
-    <p>
-      lesson-tab-component works!
-    </p>
-  `,
+  templateUrl: './lesson-tab-component.component.html',
   styleUrls: ['./lesson-tab-component.component.css']
 })
 export class LessonTabComponentComponent implements OnInit {
