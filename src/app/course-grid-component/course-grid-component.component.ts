@@ -7,12 +7,12 @@ import {CourseService} from "../services/course.service";
   styleUrls: ['./course-grid-component.component.css']
 })
 export class CourseGridComponentComponent implements OnInit {
-
+  courses = []
   constructor(private courseService: CourseService) { }
 
   ngOnInit() {
     this.courseService.findAllCourses().
-    then(course => console.log(course))
+    then(courses => this.courses = courses)
 
   }
 
