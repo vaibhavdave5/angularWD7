@@ -10,6 +10,7 @@ import { TopicPillComponentComponent } from './topic-pill-component/topic-pill-c
 import { WidgetListComponentComponent } from './widget-list-component/widget-list-component.component';
 import {RouterModule, Routes} from "@angular/router";
 import { routing } from './app.routing';
+import { CourseEditorComponent } from './course-editor/course-editor.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { routing } from './app.routing';
     LessonTabComponentComponent,
     TopicPillComponentComponent,
     WidgetListComponentComponent,
+    CourseEditorComponent,
   ],
   imports: [
     BrowserModule,
