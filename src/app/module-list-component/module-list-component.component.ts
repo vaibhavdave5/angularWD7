@@ -11,16 +11,28 @@ export class ModuleListComponentComponent implements OnInit {
 
   constructor(private service: ModuleService, private route: ActivatedRoute) {
   this.route.paramMap.subscribe((params) => {
-    console.log(params)
     this.moduleId = parseInt(params.get("moduleId"))
+    this.courseId = parseInt(params.get("courseId"))
   })
   }
   modules = []
   moduleId = -1
+  selectedModule = -1
+  courseId = -1
+
   ngOnInit() {
     this.service.findAllModules(this.moduleId).then((modules)=>{
       this.modules = modules
     })
+  }
+
+  selectColor = (module) =>{
+    console.log(module.id+" "+this.moduleId)
+    if(module.id === this.moduleId){
+      return 'alert alert-dismissible alert-success'
+    }
+    return 'alert alert-dismissible alert-danger'
+
   }
 
 

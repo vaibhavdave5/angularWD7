@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CourseService} from "../services/course.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-course-grid-component',
@@ -8,7 +9,13 @@ import {CourseService} from "../services/course.service";
 })
 export class CourseGridComponentComponent implements OnInit {
   courses = []
-  constructor(private courseService: CourseService) { }
+  courseId = -1
+  constructor(private courseService: CourseService, private route: ActivatedRoute) {
+    this.route.paramMap.subscribe((params) => {
+      console.log(params)
+      this.courseId = parseInt(params.get("courseId"))
+    })
+  }
 
   ngOnInit() {
     this.courseService.findAllCourses().
