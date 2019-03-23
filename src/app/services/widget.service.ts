@@ -8,7 +8,7 @@ export class WidgetService {
   constructor() { }
 
   findAllWidgets = (wid) => {
-    return fetch('http://localhost:8080/api/topic/'+wid+'/widget', {
+    return fetch('https://quiet-reaches-17710.herokuapp.com/api/topic/'+wid+'/widget', {
       credentials: "include",
       headers: {
         'Content-Type': 'application/json'

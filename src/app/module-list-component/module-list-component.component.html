@@ -1,22 +1,13 @@
 
-<!--<div class={moduleColor(module)}-->
-<!--onClick={() => selectModule(module)} >-->
+
 <div *ngFor="let module of modules">
   <div class="{{selectColor(module)}}">
-    <div class="row">
-      <div class="col-8">
-        <a routerLink="/course/{{courseId}}/{{module.id}}"
-           class="alert-link">{{module.title}}</a>.
-      </div>
-      <div class="col-2">
-        <button type="button" class="fa fa-trash-alt btn" data-dismiss="alert"></button>
-      </div>
-      <div class="col-2">
-        <button type="button"
-                class="fa fa-edit btn"
-                data-dismiss="alert"></button>
-        <!--onClick={() => editModule(module)}-->
-      </div>
-    </div>
+
+        <a routerLink="/course/{{courseId}}/module/{{module.id}}"
+           class="alert-link"><div class="row">
+          <div class="col-12">{{module.title}}</div>
+        </div>
+        </a>
+
   </div>
 </div>

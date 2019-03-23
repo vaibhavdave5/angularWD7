@@ -8,7 +8,7 @@ export class CourseService {
   constructor() { }
 
   findAllCourses = () => {
-    return fetch('http://localhost:8080/api/courses', {
+    return fetch('https://quiet-reaches-17710.herokuapp.com/api/courses', {
       credentials: "include",
       headers: {
         'Content-Type': 'application/json'

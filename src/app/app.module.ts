@@ -16,6 +16,10 @@ import { LinkWidgetComponent } from './link-widget/link-widget.component';
 import { ListWidgetComponent } from './list-widget/list-widget.component';
 import { ParaWidgetComponent } from './para-widget/para-widget.component';
 import { ImgWidgetComponent } from './img-widget/img-widget.component';
+import { ModulelistComponent } from './modulelist/modulelist.component';
+import { LessontabComponent } from './lessontab/lessontab.component';
+import { TopicpillComponent } from './topicpill/topicpill.component';
+import { WidgetlistComponent } from './widgetlist/widgetlist.component';
 
 
 @NgModule({
@@ -32,6 +36,10 @@ import { ImgWidgetComponent } from './img-widget/img-widget.component';
     ListWidgetComponent,
     ParaWidgetComponent,
     ImgWidgetComponent,
+    ModulelistComponent,
+    LessontabComponent,
+    TopicpillComponent,
+    WidgetlistComponent,
   ],
   imports: [
     BrowserModule,

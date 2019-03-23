@@ -8,7 +8,7 @@ export class ModuleService {
   constructor() { }
 
   findAllModules = (cid) => {
-    return fetch('http://localhost:8080/api/course/'+cid+'/modules', {
+    return fetch('https://quiet-reaches-17710.herokuapp.com/api/course/'+cid+'/modules', {
       credentials: "include",
       headers: {
         'Content-Type': 'application/json'
