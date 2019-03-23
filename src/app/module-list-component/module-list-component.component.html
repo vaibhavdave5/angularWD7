@@ -2,7 +2,7 @@
 <!--<div class={moduleColor(module)}-->
 <!--onClick={() => selectModule(module)} >-->
 <div *ngFor="let module of modules">
-  <div class={{selectColor(module)}}>
+  <div class="{{selectColor(module)}}">
     <div class="row">
       <div class="col-8">
         <a routerLink="/course/{{courseId}}/{{module.id}}"

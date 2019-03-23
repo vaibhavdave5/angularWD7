@@ -10,10 +10,10 @@ import {ActivatedRoute} from "@angular/router";
 export class ModuleListComponentComponent implements OnInit {
 
   constructor(private service: ModuleService, private route: ActivatedRoute) {
-  this.route.paramMap.subscribe((params) => {
-    this.moduleId = parseInt(params.get("moduleId"))
-    this.courseId = parseInt(params.get("courseId"))
-  })
+    this.route.paramMap.subscribe((params) => {
+      this.moduleId = parseInt(params.get("moduleId"))
+      this.courseId = parseInt(params.get("courseId"))
+    })
   }
   modules = []
   moduleId = -1
@@ -27,11 +27,11 @@ export class ModuleListComponentComponent implements OnInit {
   }
 
   selectColor = (module) =>{
-    console.log(module.id+" "+this.moduleId)
+
     if(module.id === this.moduleId){
       return 'alert alert-dismissible alert-success'
     }
-    return 'alert alert-dismissible alert-danger'
+    return 'alert alert-dismissible alert-info'
 
   }
 

@@ -1,3 +1,9 @@
-<h1>
-  topic-pill-component works!
-</h1>
+
+<ul class="nav nav-tabs" *ngFor="let topic of topics">
+  <li class="nav-item">
+    <p class="nav-link" ><a routerLink="/course/{{courseId}}/{{moduleId}}/{{lessonId}}/{{topic.id}}">{{topic.title}}</a>
+      <i class="fas fa-trash"></i>
+      <i class="fas fa-edit"></i>
+    </p>
+  </li>
+</ul>

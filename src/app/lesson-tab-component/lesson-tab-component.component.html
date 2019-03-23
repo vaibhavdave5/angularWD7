@@ -1,1 +1,15 @@
-{{moduleId}}
+<div class="row">
+  <ul class="nav nav-tabs">
+    <div class="nav-item" *ngFor="let lesson of lessons">
+        <div class="active nav-link ">
+
+         <h5> <a class="badge badge-warning"
+                 routerLink="/course/{{courseId}}/{{moduleId}}/{{lesson.id}}">
+           {{lesson.title+" "}}</a>
+           <i class="fas fa-edit "></i><i class="fas fa-trash"></i></h5>
+
+
+        </div>
+        </div>
+  </ul>
+</div>

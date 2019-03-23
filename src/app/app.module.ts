@@ -11,6 +11,11 @@ import { WidgetListComponentComponent } from './widget-list-component/widget-lis
 import {RouterModule, Routes} from "@angular/router";
 import { routing } from './app.routing';
 import { CourseEditorComponent } from './course-editor/course-editor.component';
+import { HeadingWidgetComponent } from './heading-widget/heading-widget.component';
+import { LinkWidgetComponent } from './link-widget/link-widget.component';
+import { ListWidgetComponent } from './list-widget/list-widget.component';
+import { ParaWidgetComponent } from './para-widget/para-widget.component';
+import { ImgWidgetComponent } from './img-widget/img-widget.component';
 
 
 @NgModule({
@@ -22,6 +27,11 @@ import { CourseEditorComponent } from './course-editor/course-editor.component';
     TopicPillComponentComponent,
     WidgetListComponentComponent,
     CourseEditorComponent,
+    HeadingWidgetComponent,
+    LinkWidgetComponent,
+    ListWidgetComponent,
+    ParaWidgetComponent,
+    ImgWidgetComponent,
   ],
   imports: [
     BrowserModule,

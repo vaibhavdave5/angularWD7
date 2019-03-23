@@ -1,3 +1,8 @@
-<p>
-  widget-list-component works!
-</p>
+<div *ngFor="let widget of widgets">
+  <div [hidden]="widget.type !== 'HEADING'">
+    <p><app-heading-widget [title]="widget.type"></app-heading-widget></p>
+  </div>
+  <div [hidden]="widget.type === 'HEADING'">
+    <p>{{widget.type+"scd"}}</p>
+  </div>
+</div>
