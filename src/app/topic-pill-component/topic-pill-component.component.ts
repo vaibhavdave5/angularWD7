@@ -21,6 +21,7 @@ export class TopicPillComponentComponent implements OnInit {
       this.moduleId = parseInt(params.get("moduleId"))
       this.courseId = parseInt(params.get("courseId"))
       this.lessonId = parseInt(params.get("lessonId"))
+      this.ngOnInit()
     })
   }
 

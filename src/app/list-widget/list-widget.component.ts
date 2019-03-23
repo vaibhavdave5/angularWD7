@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-list-widget',
@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ListWidgetComponent implements OnInit {
 
   constructor() { }
+
+  @Input()
+  listArr: []
+
+  @Input()
+  listType: number
 
   ngOnInit() {
   }

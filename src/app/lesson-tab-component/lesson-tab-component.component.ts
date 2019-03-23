@@ -16,6 +16,7 @@ export class LessonTabComponentComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       this.moduleId = parseInt(params.get("moduleId"))
       this.courseId = parseInt(params.get("courseId"))
+      this.ngOnInit()
     })
   }
 

@@ -1,3 +1,15 @@
-<p>
-  {{title}}
-</p>
+<div [hidden]="size !== 1">
+  <h1>{{text}}</h1>
+</div>
+<div [hidden]="size !== 2">
+  <h2>{{text}}</h2>
+</div>
+<div [hidden]="size !== 3">
+  <h3>{{text}}</h3>
+</div>
+<div [hidden]="size !== 4">
+  <h4>{{text}}</h4>
+</div>
+<div [hidden]="size !== 5">
+  <h5>{{text}}</h5>
+</div>

@@ -1,8 +1,18 @@
 <div *ngFor="let widget of widgets">
+  <br/> <br/>
   <div [hidden]="widget.type !== 'HEADING'">
-    <p><app-heading-widget [title]="widget.type"></app-heading-widget></p>
+    <app-heading-widget [text]="widget.type" [size]="widget.size"></app-heading-widget>
   </div>
-  <div [hidden]="widget.type === 'HEADING'">
-    <p>{{widget.type+"scd"}}</p>
+  <div [hidden]="widget.type !== 'IMAGE'">
+    <app-img-widget [url] = "widget.imageURL"></app-img-widget>
+  </div>
+  <div [hidden]="widget.type !== 'PARAGRAPH'">
+    <app-para-widget [text]="widget.text" ></app-para-widget>
+  </div>
+  <div [hidden]="widget.type !== 'LIST'">
+    <app-list-widget [listArr]="widget.listArr" [listType]="widget.listType"></app-list-widget>
+  </div>
+  <div [hidden]="widget.type !== 'LINK'">
+    <app-link-widget [linkURL]="widget.linkURL" [linkText]="widget.linkText"></app-link-widget>
   </div>
 </div>

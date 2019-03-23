@@ -20,6 +20,7 @@ export class WidgetListComponentComponent implements OnInit {
       this.courseId = parseInt(params.get("courseId"))
       this.topicId = parseInt(params.get("topicId"))
       this.lessonId = parseInt(params.get("lessonId"))
+      this.ngOnInit()
     })
   }
 

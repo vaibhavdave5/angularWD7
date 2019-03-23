@@ -12,8 +12,8 @@ export class CourseGridComponentComponent implements OnInit {
   courseId = -1
   constructor(private courseService: CourseService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe((params) => {
-      console.log(params)
       this.courseId = parseInt(params.get("courseId"))
+      this.ngOnInit()
     })
   }
 

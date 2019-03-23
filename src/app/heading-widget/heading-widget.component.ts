@@ -10,7 +10,10 @@ export class HeadingWidgetComponent implements OnInit {
   constructor() { }
 
   @Input()
-  title: string
+  text: string
+
+  @Input()
+  size: number
 
   ngOnInit() {
   }

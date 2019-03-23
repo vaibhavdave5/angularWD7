@@ -1,3 +1,15 @@
-<p>
-  list-widget works!
-</p>
+<div [hidden]="listType !== '1'">
+  <ol>
+    <div *ngFor="let element of listArr">
+      <li>{{element}}</li>
+    </div>
+  </ol>
+</div>
+
+<div [hidden]="listType !== '2'">
+  <ul>
+    <div *ngFor="let element of listArr">
+      <li>{{element}}</li>
+    </div>
+  </ul>
+</div>
